@@ -1,0 +1,422 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FAS_USB.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FAS_USB.ico"
+IDI_OPEN                ICON    DISCARDABLE     "res\\Documents.ico"
+IDI_SAVE                ICON    DISCARDABLE     "res\\DISK12.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FAS_USB"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FAS_USB Version 2.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "ТФ ОАО НИИС \n Copyright (C) 2008",IDC_STATIC,40,25,119,
+                    23
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FAS_USB_DIALOG DIALOGEX 0, 0, 389, 199
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Оболочка управления ФАС"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDRN1,22,23,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRK1,22,39,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED1N1,22,55,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED2N1,22,71,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDF1,22,87,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRN2,98,22,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRK2,98,38,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED1N2,98,54,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED2N2,98,70,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDF2,98,86,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRN3,174,22,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRK3,174,38,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED1N3,174,54,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED2N3,174,70,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDF3,174,86,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRN4,249,21,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRK4,249,37,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED1N4,249,53,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED2N4,249,69,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDF4,249,85,27,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDDN,100,109,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDRMAX,100,134,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDNUMOI,100,157,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDR,175,116,29,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDSHSIN,175,134,29,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "2",IDC_CHINCR1,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,229,128,20,10
+    CONTROL         "4",IDC_CHINCR2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    251,128,20,10
+    CONTROL         "8",IDC_CHINCR3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    273,128,20,10
+    CONTROL         "ШП",IDC_CHSHP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,
+                    21,27,10
+    CONTROL         "ИКМ",IDC_CHKO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,
+                    32,32,10
+    CONTROL         "ИКМ - МОД",IDC_CHCO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,43,52,10
+    CONTROL         "МОД  2F",IDC_CHNV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    316,54,45,10
+    CONTROL         "66 MHz",IDC_56_66,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    316,65,41,10
+    PUSHBUTTON      "PUSK",ID_PUSK,315,93,65,58,BS_BITMAP | BS_FLAT,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Цель 1",IDC_STATIC,10,12,72,92
+    GROUPBOX        "Цель 2",IDC_STATIC,86,12,72,92
+    GROUPBOX        "Цель 3",IDC_STATIC,162,12,72,92
+    GROUPBOX        "Цель 4",IDC_STATIC,237,12,72,92
+    GROUPBOX        "Режим работы",IDC_STATIC,313,9,70,81
+    LTEXT           "dN",IDC_STATIC,88,112,10,8
+    LTEXT           "Период ОИ, мкс",IDC_STATIC,82,124,57,8
+    LTEXT           "Число ОИ",IDC_STATIC,82,149,35,8
+    GROUPBOX        "Амплитуда шума",IDC_STATIC,148,106,68,45
+    LTEXT           "Сos",IDC_STATIC,160,119,12,8
+    LTEXT           "Sin",IDC_SHSIN,160,136,11,8
+    GROUPBOX        "Амплитуда сигнала цели,",IDC_STATIC,217,106,95,45
+    LTEXT           "",IDC_STSEARCH,285,186,102,9
+    CONTROL         "Inc OI1",IDC_CHINCOI1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,322,110,39,10
+    LTEXT           "Rн1",IDC_STATIC,57,26,14,8
+    LTEXT           "Rк1",IDC_STATIC,57,42,14,8
+    LTEXT           "F1, Hz",IDC_STATIC,57,90,22,8
+    LTEXT           "ОИнач1",IDC_STATIC,53,58,27,8
+    LTEXT           "Кол ОИ1",IDC_STATIC,51,74,29,8
+    CONTROL         "Inc OI2",IDC_CHINCOI2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,322,110,39,10
+    LTEXT           "Rн2",IDC_STATIC,132,24,14,8
+    LTEXT           "Rк2",IDC_STATIC,132,40,14,8
+    LTEXT           "F2, Hz",IDC_STATIC,132,88,22,8
+    LTEXT           "ОИнач2",IDC_STATIC,128,56,27,8
+    LTEXT           "Кол ОИ2",IDC_STATIC,126,72,30,8
+    CONTROL         "Inc OI3",IDC_CHINCOI3,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,340,93,39,10
+    LTEXT           "Rн3",IDC_STATIC,207,25,14,8
+    LTEXT           "Rк3",IDC_STATIC,207,40,14,8
+    LTEXT           "F3, Hz",IDC_STATIC,207,88,22,8
+    LTEXT           "ОИнач3",IDC_STATIC,203,57,27,8
+    LTEXT           "Кол ОИ3",IDC_STATIC,202,73,30,8
+    CONTROL         "Inc R4",IDC_CHINCR4,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,336,105,37,10
+    CONTROL         "Inc OI4",IDC_CHINCOI4,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,339,115,39,10
+    LTEXT           "Rн4",IDC_STATIC,284,24,14,8
+    LTEXT           "Rк4",IDC_STATIC,284,40,14,8
+    LTEXT           "F4, Hz",IDC_STATIC,284,88,22,8
+    LTEXT           "ОИнач4",IDC_STATIC,280,56,27,8
+    LTEXT           "Кол ОИ4",IDC_STATIC,278,72,30,8
+    COMBOBOX        IDC_CMBA0,333,103,48,58,CBS_DROPDOWN | NOT WS_VISIBLE | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           " Период, сек",IDC_STATIC,328,107,44,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Число элементов дальности ",IDC_STATIC,288,150,99,9,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_CMBVSK,322,103,48,49,CBS_DROPDOWN | NOT WS_VISIBLE | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Сдвиг ИКМ, мк сек",IDC_STATIC,301,148,77,9,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDNOI,322,101,40,14,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDKOI,322,101,40,14,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "Начальный OI",IDC_STATIC,329,107,48,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Конечный OI",IDC_STATIC,335,107,44,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    COMBOBOX        IDC_CMBDF,322,103,48,75,CBS_DROPDOWN | NOT WS_VISIBLE | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "альфа0",IDC_STATIC,341,107,26,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "DF",IDC_STATIC,323,113,10,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDZD,100,181,40,14,ES_AUTOHSCROLL
+    LTEXT           "Время задержки, нсек",IDC_STATIC,304,148,83,9,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "dN",IDC_STATIC,351,113,10,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "делённая на",IDC_STATIC,220,116,61,8
+    PUSHBUTTON      "Button1",IDC_OPEN,324,160,24,22,BS_ICON
+    PUSHBUTTON      "Button2",IDC_SAVE,349,160,24,22,BS_ICON
+    CONTROL         "Выкл",IDC_CHVIKL1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,47,10,34,10
+    CONTROL         "Выкл",IDC_CHVIKL2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,124,10,34,10
+    CONTROL         "Выкл",IDC_CHVIKL3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,199,10,34,10
+    CONTROL         "Выкл",IDC_CHVIKL4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,275,10,34,10
+    CONTROL         "Сдвиг ИКМ, мксек",IDC_CHZD_IKM_TSEK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,70,171,79,10
+    CONTROL         "SIN / COS",IDC_CHSINCOS,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,263,101,50,10
+    CONTROL         "Альфа 0 Внеш",IDC_A0,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,77,64,10
+    EDITTEXT        IDC_EDDR1,21,108,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDDN1,21,139,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDDR2,21,123,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDDN2,22,157,28,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "dR1",IDC_STATIC,54,112,14,8
+    LTEXT           "dOI1",IDC_STATIC,54,142,16,8
+    LTEXT           "dR2",IDC_STATIC,54,126,14,8
+    LTEXT           "dOI2",IDC_STATIC,54,158,16,8
+    LTEXT           " ФАС найден!",IDC_STSEARCHFAS,229,186,51,9,NOT 
+                    WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FAS_USB_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        VERTGUIDE, 50
+        VERTGUIDE, 139
+        VERTGUIDE, 230
+        VERTGUIDE, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+        HORZGUIDE, 115
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FAS_USB_DIALOG DLGINIT
+BEGIN
+    IDC_CMBA0, 0x403, 2, 0
+0x0031, 
+    IDC_CMBA0, 0x403, 2, 0
+0x0032, 
+    IDC_CMBA0, 0x403, 2, 0
+0x0038, 
+    IDC_CMBA0, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMBVSK, 0x403, 2, 0
+0x0032, 
+    IDC_CMBVSK, 0x403, 2, 0
+0x0034, 
+    IDC_CMBVSK, 0x403, 2, 0
+0x0038, 
+    IDC_CMBVSK, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_CMBVSK, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_CMBVSK, 0x403, 3, 0
+0x3436, "\000" 
+    IDC_CMBVSK, 0x403, 4, 0
+0x3231, 0x0038, 
+    IDC_CMBVSK, 0x403, 4, 0
+0x3532, 0x0036, 
+    IDC_CMBVSK, 0x403, 4, 0
+0x3135, 0x0032, 
+    IDC_CMBDF, 0x403, 4, 0
+0x2e33, 0x0035, 
+    IDC_CMBDF, 0x403, 4, 0
+0x2e37, 0x0030, 
+    IDC_CMBDF, 0x403, 5, 0
+0x3431, 0x302e, "\000" 
+    IDC_CMBDF, 0x403, 5, 0
+0x3832, 0x302e, "\000" 
+    IDC_CMBDF, 0x403, 5, 0
+0x3635, 0x302e, "\000" 
+    IDC_CMBDF, 0x403, 5, 0
+0x3636, 0x362e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PUSKD               BITMAP  DISCARDABLE     "res\\b1d.bmp"
+IDB_PUSKU               BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FAS_USB MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FAS_USB\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FAS_USB.EXE\0"
+            VALUE "ProductName", "FAS_USB Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FAS_USB..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FAS_USB.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
